@@ -1,5 +1,6 @@
 /// @description Controls player movement
 
+//check the keyboard for movement
 keyleft = keyboard_check(vk_left);
 keyright = keyboard_check(vk_right);
 keyup = keyboard_check(vk_up);
@@ -7,8 +8,10 @@ keydown = keyboard_check(vk_down);
 move = keyright - keyleft;
 vmove = keydown - keyup;
 
+//set the horizontal speed
 hsp = spd * move;
 
+//set the avatar 
 if(move != 0){
 	image_xscale = move;
 	if(grounded){
@@ -18,6 +21,7 @@ if(move != 0){
 	sprite_index = spr_avatar_idle;
 }
 
+//if the player gets to a ladder and is moving up
 if (place_meeting(x, y+1, obj_ladder)) {
 	if (vmove < 0 || 
 	(vmove == 0 && climbing) || 
@@ -30,10 +34,11 @@ if (place_meeting(x, y+1, obj_ladder)) {
 	climbing = false;
 }
 
+//if player is going up the ladder
 if (climbing) {
 	vsp = vmove * spd;
-	sprite_index = spr_avatar_run;
 }
+
 
 if (place_meeting(x + hsp, y, obj_block)) {
 	while (!place_meeting(x + sign(hsp), y, obj_block)) {
@@ -43,7 +48,6 @@ if (place_meeting(x + hsp, y, obj_block)) {
 }
 
 x += hsp;
-
 
 vsp += grv;
 
@@ -56,6 +60,5 @@ if (place_meeting(x, y + vsp, obj_block)) {
 } else {
 	grounded = false;
 }
-
 
 y += vsp;

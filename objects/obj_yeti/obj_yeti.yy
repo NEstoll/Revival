@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_yeti",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_yeti_bang_chest",
+    "path": "sprites/spr_yeti_bang_chest/spr_yeti_bang_chest.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
