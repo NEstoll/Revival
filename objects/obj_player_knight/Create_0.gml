@@ -6,7 +6,7 @@
 
 
 // Inherit the parent event
-if (state != PlayerState.DEAD) {
-	event_inherited();
-}
+event_inherited();
+x_spd = .8 * x_spd
 
+attacking = false

@@ -1,7 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (state != PlayerState.DEAD) {
-	x_vel = x_spd
+
+
+hp -= 1
+
+if (hp <= 0) {
+	//dead
+	state = PlayerState.DEAD
 }
+
 

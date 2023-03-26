@@ -6,6 +6,7 @@ event_inherited();
 enum PlayerState {
 	ALIVE,
 	DEAD,
+	CARRYING_ITEM
 }
 
 

@@ -6,7 +6,8 @@
 
 
 // Inherit the parent event
-if (state != PlayerState.DEAD) {
-	event_inherited();
-}
+event_inherited();
 
+pickup_radius = 10
+carryable = [obj_player]
+item = noone
