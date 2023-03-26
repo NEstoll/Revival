@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Revival",
   "resources": [
+    {"id":{"name":"spr_ice_1","path":"sprites/spr_ice_1/spr_ice_1.yy",},"order":1,},
     {"id":{"name":"obj_snow_block_4","path":"objects/obj_snow_block_4/obj_snow_block_4.yy",},"order":3,},
     {"id":{"name":"spr_yeti_idle","path":"sprites/spr_yeti_idle/spr_yeti_idle.yy",},"order":1,},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},"order":2,},
