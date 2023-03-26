@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_character",
-  "spriteId": null,
+  "name": "obj_ladder",
+  "spriteId": {
+    "name": "spr_snow_ladder",
+    "path": "sprites/spr_snow_ladder/spr_snow_ladder.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,14 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "name": "Enviroment",
+    "path": "folders/Objects/Enviroment.yy",
   },
 }
