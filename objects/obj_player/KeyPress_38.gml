@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-x_vel = 10
+if (grounded) {
+	y_vel = -y_spd
+	grounded = false
+}
 

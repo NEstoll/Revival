@@ -1,17 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
-  "spriteId": {
-    "name": "test",
-    "path": "sprites/test/test.yy",
-  },
+  "name": "obj_player_knight",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_player",
+    "path": "objects/obj_player/obj_player.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Objects/Enviroment.yy",
+    "name": "Player",
+    "path": "folders/Objects/Characters/Player.yy",
   },
 }

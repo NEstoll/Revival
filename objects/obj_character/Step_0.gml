@@ -1,12 +1,14 @@
 /// @description Handle movement and collision
 
 // Checking for block collision in the x-direction.
-
-if (place_meeting(x + x_vel, y, obj_block)) {
-	while (!place_meeting(x + sign(x_vel), y, obj_block)) {
-		x += sign(x_vel);	
+for (var i = 0; i < array_length(collisions); i ++) {
+	if (place_meeting(x + x_vel, y, collisions[i])) {
+		while (!place_meeting(x + sign(x_vel), y, collisions[i])) {
+			x += sign(x_vel);	
+		}
+		x_vel = 0;
+		break;
 	}
-	x_vel = 0;
 }
 
 x += x_vel;
@@ -14,17 +16,18 @@ x += x_vel;
 x_vel = x_vel * .8
 
 // Apply gravity to vertical speed
-y_vel += room.gravity
+y_vel += gvd
 
 // Checking for block collision in the y-direction.
-if (place_meeting(x, y + y_vel, obj_block)) {
-	while (!place_meeting(x, y + sign(y_vel), obj_block)) {
-		y += sign(y_vel);	
+for (var i = 0; i < array_length(collisions); i ++) {
+	if (place_meeting(x, y + y_vel, collisions[i])) {
+		while (!place_meeting(x, y + sign(y_vel), collisions[i])) {
+			y += sign(y_vel);	
+		}
+		y_vel = 0;
+		grounded = true;
+		break;
 	}
-	y_vel = 0;
-	grounded = true;
-} else {
-	grounded = false;
 }
 
 y += y_vel;

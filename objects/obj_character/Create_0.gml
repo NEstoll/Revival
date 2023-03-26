@@ -2,8 +2,10 @@
 // You can write your code in this editor
 
 
-var x_vel = 0
-var y_vel = 0
+x_vel = 0
+y_vel = 0
+gvd = .5
 
-var grounded = true
+grounded = true
+collisions = [obj_block]
 

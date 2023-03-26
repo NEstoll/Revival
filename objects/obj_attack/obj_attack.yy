@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
-  "spriteId": {
-    "name": "test",
-    "path": "sprites/test/test.yy",
-  },
+  "name": "obj_attack",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -28,7 +25,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enviroment",
-    "path": "folders/Objects/Enviroment.yy",
+    "name": "Bosses",
+    "path": "folders/Objects/Characters/Bosses.yy",
   },
 }

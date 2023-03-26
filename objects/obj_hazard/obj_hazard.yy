@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_block",
-  "spriteId": {
-    "name": "test",
-    "path": "sprites/test/test.yy",
-  },
+  "name": "obj_hazard",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
