@@ -12,3 +12,5 @@ jspd = 10;
 
 // Climbing
 climbing = false;
+
+attacking = false;

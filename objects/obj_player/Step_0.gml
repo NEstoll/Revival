@@ -11,6 +11,7 @@ vmove = keydown - keyup;
 //set the horizontal speed
 hsp = spd * move;
 
+if(!attacking){
 //set the avatar 
 if(move != 0){
 	image_xscale = move;
@@ -51,7 +52,7 @@ x += hsp;
 
 vsp += grv;
 
-if (place_meeting(x, y + vsp, obj_block)) {
+if (place_meeting(x, y + vsp, obj_block) && !climbing) {
 	while (!place_meeting(x, y + sign(vsp), obj_block)) {
 		y += sign(vsp);
 	}
@@ -62,3 +63,4 @@ if (place_meeting(x, y + vsp, obj_block)) {
 }
 
 y += vsp;
+}
