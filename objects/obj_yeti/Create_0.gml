@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+hp = 3
 spd = 2;
 sprite_index = spr_yeti_walk;
 image_xscale *= -1;
