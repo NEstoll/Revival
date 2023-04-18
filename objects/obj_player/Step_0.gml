@@ -41,19 +41,11 @@ if (climbing) {
 }
 
 
-if (place_meeting(x + hsp, y, obj_block)) {
-	while (!place_meeting(x + sign(hsp), y, obj_block)) {
-		x += sign(hsp);
-	}
-	hsp = 0;
-}
-
-x += hsp;
 
 vsp += grv;
 
-if (place_meeting(x, y + vsp, obj_block)) {
-	while (!place_meeting(x, y + sign(vsp), obj_block)) {
+if ((place_meeting(x, y + vsp, obj_block) || place_meeting(x, y + vsp, obj_frozen_player)) && !climbing) {
+	while (!(place_meeting(x, y + sign(vsp), obj_block) || place_meeting(x, y + vsp, obj_frozen_player))) {
 		y += sign(vsp);
 	}
 	if (sign(vsp) == 1) {
@@ -66,3 +58,13 @@ if (place_meeting(x, y + vsp, obj_block)) {
 
 y += vsp;
 }
+
+
+if (place_meeting(x + hsp, y, obj_block)) {
+	while (!place_meeting(x + sign(hsp), y, obj_block)) {
+		x += sign(hsp);
+	}
+	hsp = 0;
+}
+
+x += hsp;

@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings": [
-    {"name":"Cave","order":2,"path":"folders/Sprites/Tiles/Cave.yy",},
     {"name":"Cave Blocks","order":8,"path":"folders/Objects/Environment/Cave Blocks.yy",},
+    {"name":"Cave","order":2,"path":"folders/Sprites/Tiles/Cave.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_ice_1","order":1,"path":"sprites/spr_ice_1/spr_ice_1.yy",},
