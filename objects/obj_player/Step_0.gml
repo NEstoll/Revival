@@ -52,12 +52,14 @@ x += hsp;
 
 vsp += grv;
 
-if (place_meeting(x, y + vsp, obj_block) && !climbing) {
+if (place_meeting(x, y + vsp, obj_block)) {
 	while (!place_meeting(x, y + sign(vsp), obj_block)) {
 		y += sign(vsp);
 	}
+	if (sign(vsp) == 1) {
+		grounded = true;
+	}
 	vsp = 0;
-	grounded = true;
 } else {
 	grounded = false;
 }
