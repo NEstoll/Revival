@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Snow Blocks",
-    "path": "folders/Objects/Enviroment/Snow Blocks.yy",
+    "path": "folders/Objects/Environment/Snow Blocks.yy",
   },
   "parentObjectId": {
     "name": "obj_block",
