@@ -14,3 +14,5 @@ jspd = 10;
 climbing = false;
 
 attacking = false;
+
+has_powder = false;
