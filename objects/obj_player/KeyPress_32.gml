@@ -1,7 +1,9 @@
 /// @description Player jump
 
-vsp -= jspd;
-grounded = false;
-sprite_index = spr_avatar_idle;
+if(grounded == true) {
+	vsp -= jspd;
+	grounded = false;
+	sprite_index = spr_avatar_idle;
+}
 
 
