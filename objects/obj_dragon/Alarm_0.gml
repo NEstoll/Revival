@@ -8,5 +8,5 @@ if((obj_player.x < x && image_xscale < 0) ||(obj_player.x > x && image_xscale > 
 	fireball.speed = fireball.spd;
 	sprite_index = spr_dragon_fly_side;
 }
-randomint = room_speed * irandom_range(1,5);
+randomint = room_speed * irandom_range(1,8);
 alarm[0] = randomint;

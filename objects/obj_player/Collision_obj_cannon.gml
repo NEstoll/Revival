@@ -6,6 +6,7 @@ if(has_powder) {
 		other.is_loaded = true;
 		has_powder = false;
 		global.gunpowder -= 1;
+		global.used_gunpowder = true;
 	}
 }
 

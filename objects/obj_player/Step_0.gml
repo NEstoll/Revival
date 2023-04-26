@@ -44,8 +44,8 @@ if (climbing) {
 
 vsp += grv;
 
-if ((place_meeting(x, y + vsp, obj_block) || place_meeting(x, y + vsp, obj_frozen_player)) && !climbing) {
-	while (!(place_meeting(x, y + sign(vsp), obj_block) || place_meeting(x, y + vsp, obj_frozen_player))) {
+if ((place_meeting(x, y + vsp, obj_block) || place_meeting(x, y + vsp, obj_frozen_player) || place_meeting(x, y + vsp, obj_cannon)) && !climbing) {
+	while (!(place_meeting(x, y + sign(vsp), obj_block) || place_meeting(x, y + vsp, obj_frozen_player) || place_meeting(x, y + vsp, obj_cannon))) {
 		y += sign(vsp);
 	}
 	if (sign(vsp) == 1) {

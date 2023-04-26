@@ -143,8 +143,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
-    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"Help","path":"rooms/Help/Help.yy",},},
   ],

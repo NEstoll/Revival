@@ -8,7 +8,7 @@ grounded = false;
 vsp = 0;
 
 // Jumping
-jspd = 11;
+jspd = 12;
 
 // Climbing
 climbing = false;
