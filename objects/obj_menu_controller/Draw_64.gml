@@ -1,6 +1,14 @@
-draw_set_font(fnt_title);
+
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(room_width/2,140,"Revival");
+
+
+if (room == Help) {
+	draw_set_font(fnt_menu);
+	draw_text(room_width/2, room_height/4, "You find yourself in a strange landscape that seems\n oddly familiar. As you look around, and notice the remains of less\n fortunate past adventurers, you are overwelmed by a strong feeling of deja vu.\n You don't know where you are, but you know you must escape.")
+} else {
+	draw_set_font(fnt_title);
+	draw_text(room_width/2,140,"Revival");
+}
