@@ -14,7 +14,7 @@ if(phase == gui_phase.intro){
 	draw_set_font (fnt_menu);
 	draw_set_alpha (1);
 	draw_set_colour (c_black);
-	draw_text ( room_width / 2, room_height/2, "You've ended up in pergatory. \nYou need to fight your way through.\n But there is a catch...");
+	draw_text ( room_width / 2, room_height/2, "You've ended up in purgatory. \nYou need to fight your way through.\n But there is a catch...");
 }else if(phase == gui_phase.puzzle){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
