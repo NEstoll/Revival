@@ -21,6 +21,7 @@ if(move != 0){
 }else{
 	sprite_index = spr_avatar_idle;
 }
+}
 
 //if the player gets to a ladder and is moving up
 if (place_meeting(x, y+1, obj_ladder)) {
@@ -57,7 +58,7 @@ if ((place_meeting(x, y + vsp, obj_block) || place_meeting(x, y + vsp, obj_froze
 }
 
 y += vsp;
-}
+
 
 
 if (place_meeting(x + hsp, y, obj_block)) {
