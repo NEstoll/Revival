@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-alarm[0] = room_speed * 1;
+alarm[0] = room_speed * 5;
 if(phase == gui_phase.intro){
 	phase = gui_phase.background;
 }else if(phase == gui_phase.background){

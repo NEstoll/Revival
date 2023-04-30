@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings": [
     {"name":"Cave Blocks","order":8,"path":"folders/Objects/Environment/Cave Blocks.yy",},
-    {"name":"Cave","order":2,"path":"folders/Sprites/Tiles/Cave.yy",},
-    {"name":"Snow","order":1,"path":"folders/Sprites/Tiles/Snow.yy",},
-    {"name":"grass","order":3,"path":"folders/Sprites/Tiles/grass.yy",},
     {"name":"Grass Blocks","order":13,"path":"folders/Objects/Environment/Grass Blocks.yy",},
+    {"name":"Cave","order":2,"path":"folders/Sprites/Tiles/Cave.yy",},
+    {"name":"grass","order":3,"path":"folders/Sprites/Tiles/grass.yy",},
+    {"name":"Snow","order":1,"path":"folders/Sprites/Tiles/Snow.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_ice_1","order":1,"path":"sprites/spr_ice_1/spr_ice_1.yy",},

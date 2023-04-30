@@ -12,4 +12,4 @@ enum gui_phase {
 }
 
 phase = gui_phase.intro;
-alarm[0] = room_speed * 1;
+alarm[0] = room_speed * 5;

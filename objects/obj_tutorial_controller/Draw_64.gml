@@ -49,5 +49,5 @@ if(phase == gui_phase.intro){
 	draw_set_font (fnt_menu);
 	draw_set_alpha (1);
 	draw_set_colour (c_black);
-	draw_text ( room_width / 2, room_height/2, "Good Luck!");
+	draw_text ( room_width / 2, room_height/2, "Good Luck! Press enter at the door to continue.");
 }	
